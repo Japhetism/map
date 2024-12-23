@@ -65,7 +65,7 @@ const SideMenu: React.FC = () => {
   return (
     <div className="w-[272px] bg-[#F7F9FC] h-screen text-white p-5 flex flex-col justify-between">
       <div>
-        <div className="p-4">
+        <div className="p-4 mb-5">
           <LogoSVG />
         </div>
         <div>{renderMenuItems(menus)}</div>

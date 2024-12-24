@@ -13,16 +13,16 @@ export const menus: IMenuItem[] = [
   {
     title: 'Dashboard',
     path: '/dashboard',
-    icon: GridSVG
+    icon: GridSVG as React.ComponentType<React.SVGProps<SVGSVGElement>>
   },
   {
     title: 'Inventory',
     path: '/inventory',
-    icon: BoxSVG
+    icon: BoxSVG as React.ComponentType<React.SVGProps<SVGSVGElement>>
   },
   {
     title: 'Procurement',
-    icon: CartSVG,
+    icon: CartSVG as React.ComponentType<React.SVGProps<SVGSVGElement>>,
     subMenu: [
       {
         title: 'Quotes',
@@ -36,7 +36,7 @@ export const menus: IMenuItem[] = [
   },
   {
     title: 'Finance',
-    icon: MoneySVG,
+    icon: MoneySVG as React.ComponentType<React.SVGProps<SVGSVGElement>>,
     subMenu: [
       {
         title: 'Help',
@@ -51,17 +51,17 @@ export const menus: IMenuItem[] = [
   {
     title: 'Communication',
     path: '/communication',
-    icon: ChatSVG
+    icon: ChatSVG as React.ComponentType<React.SVGProps<SVGSVGElement>>
   },
   {
     title: 'Calendar',
     path: '/calendar',
-    icon: CalendarSVG
+    icon: CalendarSVG as React.ComponentType<React.SVGProps<SVGSVGElement>>
   },
   {
     title: 'Contracts',
     path: '/contracts',
-    icon: DocumentSVG
+    icon: DocumentSVG as React.ComponentType<React.SVGProps<SVGSVGElement>>
   }
 ];
 
@@ -69,11 +69,11 @@ export const bottomMenus: IMenuItem[] = [
   {
     title: 'Support',
     path: '/support',
-    icon: SupportSVG
+    icon: SupportSVG as React.ComponentType<React.SVGProps<SVGSVGElement>>
   },
   {
     title: 'Settings',
     path: '/settings',
-    icon: SettingSVG
+    icon: SettingSVG as React.ComponentType<React.SVGProps<SVGSVGElement>>
   }
 ]

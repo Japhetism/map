@@ -13,6 +13,8 @@ export interface ILayout {
 
 export interface ISvg {
   color?: string
+  width?: string
+  height?: string
 }
 
 export interface ISearchInput {
@@ -79,4 +81,11 @@ interface BreadcrumbItem {
 
 export interface IBreadcrumb {
   items: BreadcrumbItem[];
+}
+
+export interface IActionButton {
+  title: string
+  classname: string
+  rightIcon?: React.ComponentType<React.SVGProps<SVGSVGElement>>
+  onclick: () => void
 }

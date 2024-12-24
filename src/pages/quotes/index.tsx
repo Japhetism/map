@@ -6,6 +6,7 @@ import { IQuote } from '../../interface';
 import { VerticalmoreSVG } from '../../assets/icons/verticalmore';
 import { ArrowleftSVG } from '../../assets/icons/arrowleft';
 import { ArrowrightSVG } from '../../assets/icons/arrowright';
+import { Link } from 'react-router-dom';
 
 const Quotes: React.FC = () => {
   const [quotes, setQuotes] = useState<IQuote[]>([]);
@@ -77,15 +78,14 @@ const Quotes: React.FC = () => {
                   <VerticalmoreSVG />
                 </button>
 
-                {/* Dropdown Menu */}
                 {openDropdown === quote.refno && (
                   <div className="absolute right-0 mt-2 w-auto bg-white shadow-lg rounded-md border border-gray-300 z-50">
-                    <button
-                      onClick={() => handleActionSelect(quote, 'view')}
+                    <Link
+                      to={`/procurement/quotes/${quote.refno}`}
                       className="block w-full px-4 py-2 text-gray-700 text-left hover:bg-gray-100"
                     >
                       View
-                    </button>
+                    </Link>
                     <button
                       onClick={() => handleActionSelect(quote, 'edit')}
                       className="block w-full px-4 py-2 text-gray-700 text-left hover:bg-gray-100"

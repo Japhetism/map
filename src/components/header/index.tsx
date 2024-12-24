@@ -27,17 +27,17 @@ const Header: React.FC = () => {
     <header className="bg-white p-4 flex items-center justify-between border-b-[1px] border-[#F0F2F5]">
       <button
         onClick={handleBackClick}
-        className="flex flex-row items-center justify-center space-x-4"
+        className="flex flex-row items-center justify-center space-x-4 md:space-x-2"
       >
         <ArrowleftSVG />
-        <span className="text-[#667185] text-sm font-medium">Back</span>
+        <span className="hidden md:block text-[#667185] text-sm font-medium">Back</span>
       </button>
 
-      <div className="flex-end flex flex-row items-center space-x-5 mx-4">
+      <div className="flex-end flex flex-row items-center space-x-2 md:space-x-5 mx-4">
         <SearchInput
           placeholder="Search here..."
           searchQuery={searchQuery}
-          classname="w-[450px]"
+          classname="w-[200px] md:w-[450px]"
           onSearchChange={handleSearchChange}
         />
         
@@ -52,7 +52,7 @@ const Header: React.FC = () => {
           buttonIcon={<OutlinechatSVG />}
           menuItems={chats}
           onItemClick={handleDropdownItemClick}
-          classname='w-56'
+          classname="w-56"
         />
 
         <Dropdown

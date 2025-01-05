@@ -89,3 +89,8 @@ export interface IActionButton {
   rightIcon?: React.ComponentType<React.SVGProps<SVGSVGElement>>
   onclick: () => void
 }
+
+export interface ILabelValue {
+  label: string;
+  value: string | number | undefined;
+}

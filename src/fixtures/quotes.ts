@@ -4,7 +4,7 @@ export const quotes: IQuote[] = [
   {
     "status": "awaiting",
     "title": "Request for Medical Equipment",
-    "refno": "RQ #01234",
+    "refno": "01234",
     "requestor": {
       "name": "Jane Doe",
       "role": "Head nurse",
@@ -65,7 +65,7 @@ export const quotes: IQuote[] = [
   {
     "status": "approved",
     "title": "Request for ICU Equipment",
-    "refno": "RQ #01235",
+    "refno": "01235",
     "requestor": {
       "name": "Mark Smith",
       "role": "ICU Manager",
@@ -108,7 +108,7 @@ export const quotes: IQuote[] = [
   {
     "status": "rejected",
     "title": "Request for Surgical Tools",
-    "refno": "RQ #01236",
+    "refno": "01236",
     "requestor": {
       "name": "Sarah Miller",
       "role": "Surgical Nurse",
@@ -151,7 +151,7 @@ export const quotes: IQuote[] = [
   {
     "status": "awaiting",
     "title": "Request for Diagnostic Equipment",
-    "refno": "RQ #01237",
+    "refno": "01237",
     "requestor": {
       "name": "Emily Green",
       "role": "Lab Technician",
@@ -194,7 +194,7 @@ export const quotes: IQuote[] = [
   {
     "status": "approved",
     "title": "Request for OT Equipment",
-    "refno": "RQ #01238",
+    "refno": "01238",
     "requestor": {
       "name": "John White",
       "role": "Surgical Specialist",
@@ -237,7 +237,7 @@ export const quotes: IQuote[] = [
   {
     "status": "rejected",
     "title": "Request for Hospital Furniture",
-    "refno": "RQ #01239",
+    "refno": "01239",
     "requestor": {
       "name": "Nina Patel",
       "role": "Procurement Officer",
@@ -280,7 +280,7 @@ export const quotes: IQuote[] = [
   {
     "status": "approved",
     "title": "Request for Emergency Supplies",
-    "refno": "RQ #01240",
+    "refno": "01240",
     "requestor": {
       "name": "Chris Evans",
       "role": "Emergency Coordinator",
@@ -323,7 +323,7 @@ export const quotes: IQuote[] = [
   {
     "status": "awaiting",
     "title": "Request for Respiratory Equipment",
-    "refno": "RQ #01241",
+    "refno": "01241",
     "requestor": {
       "name": "Patricia Allen",
       "role": "Respiratory Therapist",

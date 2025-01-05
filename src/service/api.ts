@@ -19,6 +19,7 @@ export const getQuotesByRefNo = async (refNo: string): Promise<IQuote | undefine
   try {
     await delay(timer);
     const quote = getQuote(quotes, refNo);
+    console.log("quore is ", quote)
     return quote
   } catch (error) {
     console.error('Error fetching quote details:', error);

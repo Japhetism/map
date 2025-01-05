@@ -64,7 +64,7 @@ const Quotes: React.FC = () => {
         <tbody>
           {currentQuotes.map((quote) => (
             <tr key={quote.refno} className="hover:bg-gray-50">
-              <td className="px-4 py-2 text-[#344054] text-sm font-normal h-[53px] border-b border-gray-100">{quote?.refno}</td>
+              <td className="px-4 py-2 text-[#344054] text-sm font-normal h-[53px] border-b border-gray-100">{`RQ #${quote?.refno}`}</td>
               <td className="px-4 py-2 text-[#344054] text-sm font-normal h-[53px] border-b border-gray-100">{quote?.title}</td>
               <td className="px-4 py-2 text-[#344054] text-sm font-normal h-[53px] border-b border-gray-100">{quote?.requestor?.name}</td>
               <td className="px-4 py-2 text-[#344054] text-sm font-normal h-[53px] border-b border-gray-100">{<StatusBadge status={quote?.status} />}</td>
